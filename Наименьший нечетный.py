@@ -25,6 +25,5 @@
 Вывод программы:
 -3
 """
-# 11.09.19
-a = list(map(int, input().split()))
-print(min([i for i in a if i % 2 == 1]))
+# 01.10.19
+print(min(filter(lambda x: x % 2 != 0, map(int, input().split()))))
